@@ -11,12 +11,12 @@ Formik for form management
 Integration with backend API.
 
 Installation
-Clone the repository: git clone https://github.com/harshvardhankumbhar45/RegisterPage.git
-Navigate to the backend directory: cd backend
-Install backend dependencies: npm install
-Start the backend server: npm run dev
-Open another terminal
-Navigate to the frontend directory: cd reacttask
+Clone the repository: git clone https://github.com/harshvardhankumbhar45/RegisterPage.git <br>
+Navigate to the backend directory: cd backend.<br>
+Install backend dependencies: npm install.<br>
+Start the backend server: npm run dev.<br>
+Open another terminal.<br>
+Navigate to the frontend directory: cd reacttask<br>
 Install frontend dependencies: npm install
 Start the frontend server: npm run start
 Make sure frontend application runs on 3000 port and backend application runs on 4000 port no.
