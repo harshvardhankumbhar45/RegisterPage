@@ -7,15 +7,17 @@ import { signUpSchema } from "../schema";
 const Register = () => {
   const navigate = useNavigate();
 
+  const initialValues = {
+    name: "",
+    email: "",
+    mobile: "",
+    dob: "",
+    password: "",
+    confirmPassword: ""
+  }
+  
   const formik = useFormik({
-    initialValues: {
-      name: "",
-      email: "",
-      mobile: "",
-      dob: "",
-      password: "",
-      confirmPassword: ""
-    },
+    initialValues: initialValues,
     validationSchema: signUpSchema,
     onSubmit: async (values) => {
       console.log(values);

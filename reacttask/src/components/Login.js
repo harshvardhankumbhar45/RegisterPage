@@ -17,13 +17,18 @@ const Login = () => {
   const ErrorLogin = <div>Credentials doesn't found</div>
 
   const formik = useFormik({
+    // give initial values
     initialValues: {
       email: '',
       password: '',
     },
+
+    // import the validation schema
     validationSchema: signUpSchema,
+
+    // handle the submit, after click on button
     onSubmit: async (values) => {
-      console.log(values);
+      console.log("Values onSubmit = " + JSON.stringify(values));
 
       try {
         const response = await fetch('http://localhost:4000/test/login', {
@@ -35,7 +40,7 @@ const Login = () => {
         });
 
         const responseData = await response.json();
-        console.log(responseData);
+        console.log("Response Data = " +JSON.stringify(responseData));
 
         if (responseData && responseData.error) {
           alert('Invalid Credentials');
